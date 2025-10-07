@@ -72,7 +72,7 @@ const About = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Multilingual</h3>
                     <p className="text-sm text-muted-foreground">
-                      Fluent in English, Hindi, and Telugu
+                      Fluent in English and Telugu
                     </p>
                   </div>
                 </div>
