@@ -22,21 +22,6 @@ const Skills = () => {
     { name: "Product Design", level: 85, icon: Cpu },
   ];
 
-  const tools = [
-    "TensorFlow",
-    "PyTorch",
-    "Docker",
-    "Kubernetes",
-    "AWS",
-    "MongoDB",
-    "React",
-    "Next.js",
-    "scikit-learn",
-    "Pandas",
-    "NumPy",
-    "Git",
-  ];
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -146,30 +131,6 @@ const Skills = () => {
               </motion.div>
             </div>
 
-            {/* Tools & Technologies */}
-            <div>
-              <h3 className="text-2xl font-semibold mb-8 flex items-center gap-2">
-                <Cpu className="w-6 h-6 text-accent" />
-                Tools & Technologies
-              </h3>
-              <motion.div
-                variants={containerVariants}
-                initial="hidden"
-                animate={isInView ? "visible" : "hidden"}
-                className="flex flex-wrap gap-3"
-              >
-                {tools.map((tool) => (
-                  <motion.div
-                    key={tool}
-                    variants={itemVariants}
-                    whileHover={{ scale: 1.05 }}
-                    className="glass-effect px-6 py-3 rounded-full text-sm font-medium border border-primary/20 hover:border-primary/50 transition-colors"
-                  >
-                    {tool}
-                  </motion.div>
-                ))}
-              </motion.div>
-            </div>
           </div>
         </motion.div>
       </div>
